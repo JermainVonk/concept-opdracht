@@ -1,0 +1,263 @@
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 12px;
+}
+/* ------------------------------- 2. Typography ----------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&family=Roboto:wght@300&display=swap');
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Merriweather', serif;
+
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --Purple: #5722CD;
+    --Blue: #4845E4;
+    --Pink: #ED4385;
+    --Black: #0C0C0C;
+    --Light-purple: #F2F0FF;
+    --Light-grey: #F3F6F9;
+    --Grey: #7A7A7A;
+}
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* --------------- 3.1 Reusables ----------------------- */
+.dev{
+    border: 2px solid red;
+}
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul{
+    display: flex;
+    gap: 1em;
+}
+nav ul li{
+    list-style: none;
+}
+.header-section-navbar {
+    padding: 1em;
+}
+.outer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3em;
+    width: 100%;
+}
+.inner-container{
+    flex-basis: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em;
+    text-align: center;
+    color: var(--Light-grey);
+}
+.icon-picture{
+    width: 100%;
+}
+.image-wrapper{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 48%;
+}
+
+.header-section-text{
+    margin: 1em;
+}
+.primary-button{
+    background-color: var(--Pink);
+    color: var(--Light-grey);
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 2em;
+    box-shadow: 5px 5px 5px black;
+}
+header{
+    background: linear-gradient(to right, #4845E4, #5722CD);
+    color: var(--Light-grey);
+    position: relative;
+}
+/* --------------- 4.2 Introduction ------------------- */
+
+.outer-container-section-one{
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+.inner-container-section-one{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-basis: 1200px;
+    color: var(--Purple);
+    padding: 2em;
+    text-align: center;
+
+}
+.inner-container-section-one h2{
+    padding-bottom: 2em;
+}
+.inner-container-section-one h6{
+    color: var(--Black);
+}
+.outer-container-section-two{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1200px;
+}
+.rolling-stone{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+
+}
+.rolling-stone-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 300px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 2em;
+    margin: 4em;
+    font-size: 1em;
+}
+.section-icon{
+    max-width: 50px;
+}
+
+.section-desk-image{
+    width: 100%;
+}
+.image-wrapper-rolling-stone{
+    flex-basis: 600px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+.variety{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 10px 10px;
+
+}
+.variety-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 300px ;
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding: 2em;
+    margin: 4em;
+    font-size: 1em;
+}
+
+.section-desk-image-two{
+    width: 100%;
+}
+.image-wrapper-variety{
+    flex-basis: 600px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+.worth{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+}
+.worth-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 300px ;
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding: 2em;
+    margin: 4em;
+    font-size: 1em;
+}
+.section-desk-image-three{
+    width: 100%;
+}
+.image-wrapper-worth {
+    flex-basis: 600px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+.usp-article{
+    text-align: start;
+    flex-basis: 250px;
+    padding: 2em;
+    border: 2px solid var(--Purple);
+}
+.usp-article h3{
+    color: var(--Purple);
+}
+.usp-article p{
+    color: var(--Grey);
+}
+.usp-article img{
+    width: 4em;
+    margin: 1.5em 0;
+}
+.article-grid{
+    flex-basis: 1200px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1.5em;
+    margin: 0 2em;
+    padding: 4em;
+}
+.outer-container-section-three{
+    flex-basis: 1200px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #4845E4, #5722CD);
+
+}
+.inner-container-section-three{
+
+    display: flex;
+    flex-direction: column;
+    color: var(--Light-grey);
+
+}
+/* ------------------------------- 5. Media Queries -------------------------------- */
